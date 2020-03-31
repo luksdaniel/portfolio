@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta charset="UTF-8">
+
+<head>
+    <title>Portfólio de Lucas Daniel Batista</title>
+    <style>
+        @import url(style.css);
+        @import url('https://fonts.googleapis.com/css?family=Francois+One|Roboto+Slab&display=swap');
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lucas Daniel Batista</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar text-center">
+            <ul>
+                <li><img src="images/perfil.jpg" class="rounded-circle"></li>
+                <li><a href="#" id="sobre" onclick="mostra('conteudo-sobre', 'conteudo-form', 'conteudo-inter', 'conteudo-work')">Sobre</a></li>
+                <li><a href="#" id="form" onclick="mostra('conteudo-form', 'conteudo-sobre', 'conteudo-inter', 'conteudo-work')">Estudo</a></li>
+                <li><a href="#" id="inter" onclick="mostra('conteudo-inter', 'conteudo-form', 'conteudo-sobre', 'conteudo-work')">Experiências</a></li>
+                <li><a href="#" id="work" onclick="mostra('conteudo-work', 'conteudo-inter', 'conteudo-form', 'conteudo-sobre')">Trabalho</a></li>
+            </ul>
+        </div>
+        <div class="main_content">
+            <div id="conteudo-sobre">
+                <h1><b><span class="text-primary">Lucas</span> Daniel Batista</b></h1>
+                <h4>Ouro Verde do Oeste, PR - 85933-000 - luksdanielbatista2@gmail.com - (45) 9 9926-8614</h4>
+                <p>Olá, seja bem vindo ao meu portfólio!</p>
+                <p>Sou um universitário de 18 anos apaixonado por tecnologia. Neste site você irá descobrir um pouco sobre meus interesses, formações e trabalho além de claro, me conhecer um pouco melhor!</p>
+                <p>
+                    <a href="https://www.instagram.com/lucaas_bat/" >
+                        <img src="images/insta.png">
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100004868141754" >
+                        <img src="images/face.png">
+                    </a>
+                    <a href="https://github.com/luksdaniel" >
+                        <img src="images/git.png">
+                    </a>
+                    <a href="#" >
+                        <img src="images/link.png">
+                    </a>
+                </p>
+            </div>
+            <div id="conteudo-form" class="hidden">
+                <p>Atualmente cursando <b>Tecnologia em sistemas para internet</b>, na Universidade Tecnologica Federal do Parara - UTFPR câmpus de Toledo</p>
+                <p>Para o futuro, pretendo ingressar em uma Pós-graduação, em alguma área da Tecnologia da informação que ainda estou a decidir. Além disso, pretendo me formar em Teatro para possivelmente trabalhar como dublador, uma profissão pela qual tenho uma grande admiração e interesse em ingressar.</p>
+            </div>
+            <div id="conteudo-inter" class="hidden">
+                <h4>Experiências e profissões exercidas</h4>
+                <p>Trabalhei como Locutor na ARCOV, Associação Radiofônica Cultural de Ouro Verde - <b>Rádio Verde Oeste FM 105,9</b>. De Outubro de 2017 a Fevereiro de 2019</p>
+                <p>Atualmente, trabalho como suporte técnico na empresa <b>German Tech Sistemas</b>, exercendo a função de Help Desk. Trabalho no qual ingressei em Abril de 2019</p>
+            </div>
+            <div id="conteudo-work" class="hidden">
+                <h4>Um pouco do meu trabalho</h4>
+                <p>Devido ao curso superior no qual estou ingressado, tenho conhecimento básico/iniciante de programação web, focado no Front End. Apesar de ter uma noção do Back End, ainda estou desenvolvendo as habilidade necessárias. Um exemplo do meu trabalho na área, é o site no qual você está acessado no momento, que foi desenvolvido por mim.</p>
+                <p>Devido ao meu trabalho como Locutor de Rádio, tenho facilidade para comunicação, e realizo algumas atividades de dublagem como hobbie, também gostaria de exercer tal função profissionalmente. Abaixo estão: </p>
+                <p>Uma demonstração do meu trabhalho como Locutor:</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ijqJAlKz1qA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Uma dublagem que realizei por hobbie:</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function mostra(id, id2, id3, id4){
+        if(document.getElementById(id).style.display == 'block'){
+            document.getElementById(id).style.display = 'none';
+        }else{
+            document.getElementById(id).style.display = 'block';
+        }
+        document.getElementById(id2).style.display = 'none';
+        document.getElementById(id3).style.display = 'none';
+        document.getElementById(id4).style.display = 'none';
+    }
+</script>
+</html>
