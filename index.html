@@ -4,6 +4,7 @@
 
 <head>
     <title>Portfólio de Lucas Daniel Batista</title>
+    <link rel="shortcut icon" href="images/icone.png">
     <style>
         @import url(style.css);
         @import url('https://fonts.googleapis.com/css?family=Francois+One|Roboto+Slab&display=swap');
@@ -30,7 +31,7 @@
         <div class="sidebar text-center">
             <ul>
                 <li><img src="images/perfil.jpg" class="rounded-circle"></li>
-                <li><a href="#" id="sobre" onclick="mostra('conteudo-sobre', 'conteudo-form', 'conteudo-inter', 'conteudo-work')">Sobre</a></li>
+                <li><a href="#" id="sobre" onclick="mostra('conteudo-sobre', 'conteudo-form', 'conteudo-inter', 'conteudo-work')">Início</a></li>
                 <li><a href="#" id="form" onclick="mostra('conteudo-form', 'conteudo-sobre', 'conteudo-inter', 'conteudo-work')">Estudo</a></li>
                 <li><a href="#" id="inter" onclick="mostra('conteudo-inter', 'conteudo-form', 'conteudo-sobre', 'conteudo-work')">Experiências</a></li>
                 <li><a href="#" id="work" onclick="mostra('conteudo-work', 'conteudo-inter', 'conteudo-form', 'conteudo-sobre')">Trabalho</a></li>
@@ -69,21 +70,17 @@
             <div id="conteudo-work" class="hidden">
                 <h4>Um pouco do meu trabalho</h4>
                 <p>Devido ao curso superior no qual estou ingressado, tenho conhecimento básico/iniciante de programação web, focado no Front End. Apesar de ter uma noção do Back End, ainda estou desenvolvendo as habilidade necessárias. Um exemplo do meu trabalho na área, é o site no qual você está acessado no momento, que foi desenvolvido por mim.</p>
-                <p>Devido ao meu trabalho como Locutor de Rádio, tenho facilidade para comunicação, e realizo algumas atividades de dublagem como hobbie, também gostaria de exercer tal função profissionalmente. Abaixo estão: </p>
+                <p>Devido ao meu trabalho como Locutor de Rádio, tenho facilidade para comunicação, Também tenho interesse em trabalhar como dublador, principalmente para jogos, que são uma outra paixão que tenho. Abaixo estão: </p>
                 <p>Uma demonstração do meu trabhalho como Locutor:</p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ijqJAlKz1qA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <p>Uma dublagem que realizei por hobbie:</p>
+                    <iframe width="390" height="215" src="https://www.youtube.com/embed/ijqJAlKz1qA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
 </body>
 <script>
     function mostra(id, id2, id3, id4){
-        if(document.getElementById(id).style.display == 'block'){
-            document.getElementById(id).style.display = 'none';
-        }else{
-            document.getElementById(id).style.display = 'block';
-        }
+
+        document.getElementById(id).style.display = 'block';
         document.getElementById(id2).style.display = 'none';
         document.getElementById(id3).style.display = 'none';
         document.getElementById(id4).style.display = 'none';
